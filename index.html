@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algeria Business Cloud | SaaS Platform for Algerian Enterprises</title>
+    <meta name="description" content="A complete SaaS platform for Algerian businesses featuring invoicing, POS, HR, inventory, accounting, CRM, e-commerce and more.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: #0b1120; color: #f3f4f6; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        header { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        .badge { display: inline-block; padding: 0.4rem 1rem; background: rgba(45, 212, 191, 0.15); color: #2dd4bf; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; border: 1px solid rgba(45, 212, 191, 0.2); }
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: -1px; margin-bottom: 1rem; }
+        h1 span { background: linear-gradient(135deg, #2dd4bf 0%, #0d9488 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { font-size: clamp(1.2rem, 2vw, 1.5rem); color: #9ca3af; margin-bottom: 2rem; }
+        .desc { font-size: 1.1rem; color: #9ca3af; max-width: 700px; margin-bottom: 2.5rem; }
+        .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .btn { display: inline-flex; align-items: center; padding: 0.875rem 1.75rem; border-radius: 8px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; text-decoration: none; }
+        .btn-primary { background: #2dd4bf; color: #0b1120; }
+        .btn-primary:hover { background: #14b8a6; transform: translateY(-2px); box-shadow: 0 10px 20px -10px #2dd4bf; }
+        .btn-outline { background: transparent; color: #f3f4f6; border: 1px solid rgba(255,255,255,0.1); }
+        .btn-outline:hover { border-color: #2dd4bf; color: #2dd4bf; transform: translateY(-2px); }
+        .section-title { font-size: 1.5rem; margin-bottom: 2rem; padding-top: 4rem; }
+        .section-title span { color: #2dd4bf; font-family: monospace; margin-right: 0.5rem; }
+        .modules-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+        .module-card { background: #111827; border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .module-card:hover { transform: translateY(-4px); border-color: rgba(45,212,191,0.2); }
+        .module-phase { font-size: 0.75rem; color: #2dd4bf; font-family: monospace; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; }
+        .module-name { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .module-desc { color: #9ca3af; font-size: 0.9rem; }
+        .layers { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .layer-card { background: #111827; border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.05); text-align: center; }
+        .layer-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .layer-name { font-weight: 600; }
+        .layer-desc { color: #9ca3af; font-size: 0.85rem; margin-top: 0.25rem; }
+        footer { text-align: center; padding: 3rem 0; color: #9ca3af; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 4rem; }
+        a { color: #2dd4bf; }
+        hr { border: none; border-top: 1px solid rgba(255,255,255,0.05); margin: 2rem 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">SaaS Platform</div>
+            <h1>Algeria <span>Business Cloud</span></h1>
+            <p class="subtitle">The Complete SaaS Ecosystem for Algerian Enterprises</p>
+            <p class="desc">A modular, scalable platform with 12 integrated business applications — from invoicing and POS to HR, inventory, e-commerce, and beyond. Built for the Algerian market with local compliance, payment gateways, and bilingual support.</p>
+            <div class="btn-group">
+                <a href="https://github.com/DzAchref/AlgeriaSaaS" target="_blank" class="btn btn-primary">View on GitHub</a>
+                <a href="#modules" class="btn btn-outline">Explore Modules</a>
+            </div>
+        </header>
+
+        <section id="modules">
+            <h2 class="section-title"><span>01.</span>Platform Architecture</h2>
+            <div class="layers">
+                <div class="layer-card">
+                    <div class="layer-icon">�?�</div>
+                    <div class="layer-name">Payment Hub</div>
+                    <div class="layer-desc">CPL, Edahabia, Baridimob</div>
+                </div>
+                <div class="layer-card">
+                    <div class="layer-icon">�?¢</div>
+                    <div class="layer-name">Identity & Auth</div>
+                    <div class="layer-desc">RBAC, JWT, multi-tenant</div>
+                </div>
+                <div class="layer-card">
+                    <div class="layer-icon">�?¡</div>
+                    <div class="layer-name">Notifications</div>
+                    <div class="layer-desc">Email, SMS, WhatsApp</div>
+                </div>
+                <div class="layer-card">
+                    <div class="layer-icon">⚖️</div>
+                    <div class="layer-name">Compliance Engine</div>
+                    <div class="layer-desc">TVA, IRG, e-invoicing, ANPDP</div>
+                </div>
+            </div>
+
+            <h2 class="section-title"><span>02.</span>Business Modules</h2>
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-phase">Phase 1 • Foundation</div>
+                    <div class="module-name">Invoicing & Tax</div>
+                    <div class="module-desc">Professional invoicing with Algerian tax compliance</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-phase">Phase 1 • Foundation</div>
+                    <div class="module-name">POS & Retail</div>
+                    <div class="module-desc">Point of sale system for retail businesses</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-phase">Phase 1 • Foundation</div>
+                    <div class="module-name">HR & Payroll</div>
+                    <div class="module-desc">Employee management and payroll processing</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-phase">Phase 2 • Operations</div>
+                    <div class="module-name">Inventory Management</div>
+                    <div class="module-desc">Track stock, warehouses, and supply chain</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-phase">Phase 2 • Operations</div>
+                    <div class="module-name">Accounting</div>
+                    <div class="module-desc">Double-entry bookkeeping and financial reports</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-phase">Phase 2 • Operations</div>
+                    <div class="module-name">CRM</div>
+                    <div class="module-desc">Customer relationship management</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-phase">Phase 2 • Operations</div>
+                    <div class="module-name">Booking System</div>
+                    <div class="module-desc">Appointments and reservations management</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-phase">Phase 3 • Sectoral</div>
+                    <div class="module-name">Delivery</div>
+                    <div class="module-desc">Last-mile delivery and logistics</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-phase">Phase 3 • Sectoral</div>
+                    <div class="module-name">E-Commerce</div>
+                    <div class="module-desc">Online storefront for digital and physical goods</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-phase">Phase 3 • Sectoral</div>
+                    <div class="module-name">AgriTech</div>
+                    <div class="module-desc">Agricultural business management</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-phase">Phase 3 • Sectoral</div>
+                    <div class="module-name">BTP</div>
+                    <div class="module-desc">Construction project management</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-phase">Phase 4 • Intelligence</div>
+                    <div class="module-name">BI & Analytics</div>
+                    <div class="module-desc">Business intelligence dashboards and insights</div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section style="text-align: center; padding: 4rem 0;">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Built for Algeria 🇩🇿</h2>
+            <p style="color: #9ca3af; max-width: 600px; margin: 0 auto 2rem;">Full bilingual support (Arabic/French/English), local payment gateways, Algerian tax compliance, and ANPDP data protection.</p>
+            <a href="https://github.com/DzAchref/AlgeriaSaaS" target="_blank" class="btn btn-primary">Explore the Code →</a>
+        </section>
+
+        <footer>
+            <p>© 2026 Algeria Business Cloud. Built with Turborepo, NestJS & Next.js.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;"><a href="https://github.com/DzAchref/AlgeriaSaaS">GitHub</a></p>
+        </footer>
+    </div>
+</body>
+</html>
