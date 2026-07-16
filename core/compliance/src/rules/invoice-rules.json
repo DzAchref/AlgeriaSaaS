@@ -1,0 +1,224 @@
+{
+  "version": "2025.1",
+  "effectiveDate": "2025-01-01",
+  "authority": "Direction Générale des Impôts (DGI) — Algérie",
+  "legalBasis": "Code de Commerce, Art. 13; Code des Procédures Fiscales; Décret exécutif 2021-117",
+  "invoiceFormat": {
+    "numberFormat": "FAC/{YYYY}/{NNNNNN}",
+    "numberPadding": 6,
+    "yearFormat": "YYYY",
+    "separator": "/",
+    "prefix": "FAC",
+    "creditNotePrefix": "AVO",
+    "debitNotePrefix": "DEB",
+    "description": "Format de numérotation séquentielle obligatoire",
+    "descriptionAr": "تنسيق الترقيم التسلسلي الإلزامي"
+  },
+  "mandatoryFields": {
+    "seller": {
+      "fields": [
+        {
+          "key": "raisonSociale",
+          "label": "Raison sociale",
+          "labelAr": "الاسم التجاري",
+          "required": true,
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "key": "rc",
+          "label": "Registre de Commerce",
+          "labelAr": "السجل التجاري",
+          "required": true,
+          "type": "string",
+          "pattern": "^[0-9]{2}/[0-9]{2}-[0-9]{7}[A-Z][0-9]{2}$",
+          "example": "16/00-1234567A20"
+        },
+        {
+          "key": "nif",
+          "label": "Numéro d'Identification Fiscale",
+          "labelAr": "رقم التعريف الجبائي",
+          "required": true,
+          "type": "string",
+          "pattern": "^[0-9]{15}$",
+          "length": 15
+        },
+        {
+          "key": "nis",
+          "label": "Numéro d'Identification Statistique",
+          "labelAr": "رقم التعريف الإحصائي",
+          "required": true,
+          "type": "string",
+          "pattern": "^[0-9]{11,15}$"
+        },
+        {
+          "key": "ai",
+          "label": "Article d'Imposition",
+          "labelAr": "مادة الفرض",
+          "required": true,
+          "type": "string",
+          "pattern": "^[0-9]{11,15}$"
+        },
+        {
+          "key": "adresse",
+          "label": "Adresse complète",
+          "labelAr": "العنوان الكامل",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "key": "wilaya",
+          "label": "Wilaya",
+          "labelAr": "الولاية",
+          "required": true,
+          "type": "string"
+        }
+      ]
+    },
+    "buyer": {
+      "fields": [
+        {
+          "key": "raisonSociale",
+          "label": "Raison sociale / Nom",
+          "labelAr": "الاسم التجاري / الاسم",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "key": "nif",
+          "label": "NIF (B2B obligatoire)",
+          "labelAr": "رقم التعريف الجبائي (إلزامي للشركات)",
+          "required": false,
+          "requiredForB2B": true,
+          "type": "string",
+          "pattern": "^[0-9]{15}$"
+        },
+        {
+          "key": "adresse",
+          "label": "Adresse",
+          "labelAr": "العنوان",
+          "required": true,
+          "type": "string"
+        }
+      ]
+    },
+    "invoice": {
+      "fields": [
+        {
+          "key": "invoiceNumber",
+          "label": "Numéro de facture",
+          "labelAr": "رقم الفاتورة",
+          "required": true,
+          "type": "string",
+          "sequential": true
+        },
+        {
+          "key": "invoiceDate",
+          "label": "Date de facture",
+          "labelAr": "تاريخ الفاتورة",
+          "required": true,
+          "type": "date",
+          "format": "YYYY-MM-DD"
+        },
+        {
+          "key": "dueDate",
+          "label": "Date d'échéance",
+          "labelAr": "تاريخ الاستحقاق",
+          "required": false,
+          "type": "date"
+        },
+        {
+          "key": "currency",
+          "label": "Devise",
+          "labelAr": "العملة",
+          "required": true,
+          "type": "string",
+          "default": "DZD"
+        }
+      ]
+    },
+    "lineItems": {
+      "fields": [
+        {
+          "key": "designation",
+          "label": "Désignation",
+          "labelAr": "التسمية",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "key": "quantity",
+          "label": "Quantité",
+          "labelAr": "الكمية",
+          "required": true,
+          "type": "number",
+          "min": 0
+        },
+        {
+          "key": "unitPriceHT",
+          "label": "Prix unitaire HT",
+          "labelAr": "السعر الوحدوي خارج الرسم",
+          "required": true,
+          "type": "number",
+          "min": 0
+        },
+        {
+          "key": "tvaRate",
+          "label": "Taux de TVA",
+          "labelAr": "نسبة الرسم على القيمة المضافة",
+          "required": true,
+          "type": "number",
+          "allowedValues": [0, 9, 19]
+        },
+        {
+          "key": "totalHT",
+          "label": "Total HT",
+          "labelAr": "المجموع خارج الرسم",
+          "required": true,
+          "type": "number"
+        }
+      ]
+    },
+    "totals": {
+      "fields": [
+        {
+          "key": "totalHT",
+          "label": "Total HT",
+          "labelAr": "المجموع خارج الرسم",
+          "required": true
+        },
+        {
+          "key": "totalTVA",
+          "label": "Montant TVA",
+          "labelAr": "مبلغ الرسم على القيمة المضافة",
+          "required": true
+        },
+        {
+          "key": "timbreFiscal",
+          "label": "Timbre fiscal",
+          "labelAr": "الطابع الجبائي",
+          "required": true
+        },
+        {
+          "key": "totalTTC",
+          "label": "Total TTC",
+          "labelAr": "المجموع مع الرسم",
+          "required": true
+        }
+      ]
+    }
+  },
+  "retentionPeriod": {
+    "years": 10,
+    "description": "Conservation obligatoire des factures pendant 10 ans",
+    "descriptionAr": "الحفظ الإلزامي للفواتير لمدة 10 سنوات",
+    "legalReference": "Code de Commerce, Art. 13"
+  },
+  "eInvoicing": {
+    "mandatory": false,
+    "mandatoryDate": "2027-01-01",
+    "xmlFormat": "DGI-FACTURE-V1",
+    "description": "Facturation électronique obligatoire à partir de 2027",
+    "descriptionAr": "الفوترة الإلكترونية الإلزامية ابتداءً من 2027"
+  }
+}

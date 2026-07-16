@@ -1,0 +1,120 @@
+{
+  "version": "2025.1",
+  "effectiveDate": "2025-01-01",
+  "authority": "Direction Générale des Impôts (DGI) — Algérie",
+  "legalBasis": "Code des Impôts Directs et Taxes Assimilées (CIDTA), Art. 104",
+  "taxName": "Impôt sur le Revenu Global (IRG)",
+  "taxNameAr": "الضريبة على الدخل الإجمالي",
+  "schedule": "monthly",
+  "currency": "DZD",
+  "brackets": [
+    {
+      "id": 1,
+      "minAmount": 0,
+      "maxAmount": 30000,
+      "rate": 0.0,
+      "percentage": 0,
+      "description": "Tranche exonérée",
+      "descriptionAr": "الشريحة المعفاة"
+    },
+    {
+      "id": 2,
+      "minAmount": 30001,
+      "maxAmount": 120000,
+      "rate": 0.20,
+      "percentage": 20,
+      "description": "Tranche à 20%",
+      "descriptionAr": "شريحة 20%"
+    },
+    {
+      "id": 3,
+      "minAmount": 120001,
+      "maxAmount": 360000,
+      "rate": 0.30,
+      "percentage": 30,
+      "description": "Tranche à 30%",
+      "descriptionAr": "شريحة 30%"
+    },
+    {
+      "id": 4,
+      "minAmount": 360001,
+      "maxAmount": null,
+      "rate": 0.35,
+      "percentage": 35,
+      "description": "Tranche à 35%",
+      "descriptionAr": "شريحة 35%"
+    }
+  ],
+  "socialContributions": {
+    "cnasEmployee": {
+      "code": "CNAS_EMP",
+      "rate": 0.09,
+      "percentage": 9,
+      "base": "grossSalary",
+      "description": "Cotisation CNAS salarié",
+      "descriptionAr": "اشتراك الضمان الاجتماعي للعامل",
+      "legalReference": "Loi 83-14"
+    },
+    "cnasEmployer": {
+      "code": "CNAS_EER",
+      "rate": 0.265,
+      "percentage": 26.5,
+      "base": "grossSalary",
+      "breakdown": {
+        "socialInsurance": 0.125,
+        "retirement": 0.075,
+        "unemployment": 0.015,
+        "earlyRetirement": 0.005,
+        "housingFund": 0.005,
+        "occupationalAccidents": 0.0125,
+        "professionalTraining": 0.01,
+        "complementaryRetirement": 0.005,
+        "worksCouncil": 0.005,
+        "socialWorksAllocation": 0.007
+      },
+      "description": "Cotisation CNAS employeur",
+      "descriptionAr": "اشتراك الضمان الاجتماعي لصاحب العمل",
+      "legalReference": "Loi 83-14"
+    },
+    "asnap": {
+      "code": "ASNAP",
+      "rate": 0.005,
+      "percentage": 0.5,
+      "base": "grossSalary",
+      "description": "Contribution ASNAP — Aide sociale nationale aux personnes actives",
+      "descriptionAr": "مساهمة المساعدة الاجتماعية الوطنية للأشخاص الناشطين",
+      "legalReference": "Loi de Finances 2025",
+      "condition": "Applicable to all salaried workers"
+    }
+  },
+  "abatements": {
+    "standard": {
+      "minAbatement": 1000,
+      "maxAbatement": 1500,
+      "rate": 0.40,
+      "description": "Abattement IRG standard de 40% (min 1 000 DZD, max 1 500 DZD/mois)",
+      "descriptionAr": "تخفيض 40% من الضريبة على الدخل (أدنى 1000 دج، أقصى 1500 دج/شهر)"
+    }
+  },
+  "specialRegimes": [
+    {
+      "code": "ZONE_SUD",
+      "description": "Abattement supplémentaire pour les wilayas du Sud",
+      "descriptionAr": "تخفيض إضافي لولايات الجنوب",
+      "additionalAbatement": 0.50,
+      "applicableWilayas": ["Adrar", "Tamanghasset", "Illizi", "Tindouf", "Béchar", "Ghardaïa", "Ouargla", "El Oued"]
+    },
+    {
+      "code": "HANDICAP",
+      "description": "Exonération pour travailleurs handicapés",
+      "descriptionAr": "إعفاء العمال ذوي الاحتياجات الخاصة",
+      "exemptionRate": 1.0,
+      "legalReference": "Art. 68 CIDTA"
+    }
+  ],
+  "rounding": {
+    "method": "HALF_UP",
+    "precision": 2,
+    "currency": "DZD"
+  }
+}

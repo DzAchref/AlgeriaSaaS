@@ -1,0 +1,18 @@
+{
+  "Index": {
+    "title": "الفواتير",
+    "description": "لوحة القيادة",
+    "create_invoice": "إنشاء فاتورة",
+    "total_ht": "المجموع دون رسوم",
+    "tva": "الرسم على القيمة المضافة",
+    "total_ttc": "المجموع بكل الرسوم",
+    "status_draft": "مسودة",
+    "status_issued": "صادرة"
+  },
+  "Navigation": {
+    "dashboard": "لوحة القيادة",
+    "invoices": "الفواتير",
+    "clients": "العملاء",
+    "settings": "الإعدادات"
+  }
+}

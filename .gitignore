@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+.next/
+out/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Docker
+postgres_data/
+redis_data/
+
+# Uploads
+uploads/
+
+# Turbo
+.turbo/
+
+# Testing
+*.spec.js
+*.test.js

@@ -1,0 +1,25 @@
+{
+  "tvaRates": [
+    {
+      "rate": 19,
+      "description": "Taux normal",
+      "categories": ["General goods", "Services"]
+    },
+    {
+      "rate": 9,
+      "description": "Taux réduit",
+      "categories": ["Basic necessities", "Medicine", "Books"]
+    },
+    {
+      "rate": 0,
+      "description": "Exonéré",
+      "categories": ["Exports", "Specific agricultural products"]
+    }
+  ],
+  "fiscalStamp": {
+    "cashPaymentThreshold": 5000,
+    "ratePerHundred": 1,
+    "minAmount": 5,
+    "maxAmount": 2500
+  }
+}

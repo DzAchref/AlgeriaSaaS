@@ -1,0 +1,17 @@
+module_id,name,phase,start_month,duration_months,primary_users,core_pain,pricing_dzd,tech_lead,gate_status
+L0.1,Payment Hub,0,0,3,All modules,SATIM/CIB/Edahabia abstraction,N/A,backend,interview
+L0.2,Identity & Auth,0,0,3,All modules,Multi-tenant + RC/NIF verify,N/A,backend,interview
+L0.3,Notification Hub,0,1,3,All modules,WhatsApp/SMS/Email unify,N/A,backend,interview
+L0.4,Compliance Engine,0,1,4,All modules,TVA/e-invoicing/ANPDP,N/A,backend,interview
+S1,Invoicing & Tax,1,3,5,Auto-entrepreneurs/SARL,DGI compliance,0-12000,backend,interview
+S2,POS & Retail,1,3,5,Supérettes/pharma/resto,Fast checkout,2000-8000,frontend,interview
+S3,HR & Payroll,1,4,5,SMEs 5-200 emp,CNAS/IRG calc,3000-25000,backend,interview
+S4,Inventory & SCM,2,6,5,Distributors/wholesale,Multi-warehouse,4000-20000,backend,interview
+S5,Accounting & ERP,2,6,6,SARL/EURL,Bookkeeping+G50,3000-30000,backend,interview
+S6,CRM & WhatsApp,2,7,5,B2B/services/retail,WhatsApp sales,2500-15000,frontend,interview
+S7,Appointment & Booking,2,7,4,Salons/clinics,Scheduling,1500-9000,frontend,interview
+S8,Delivery & Logistics,3,9,5,Last-mile/e-commerce,COD reconciliation,5000-40000,mobile,interview
+S9,E-commerce Builder,3,9,5,D2C/retail,Storefront+COD,3000-20000,frontend,interview
+S10,Agritech / Farm,3,10,6,Farmers/cooperatives,Soil/irrigation/yield,2000-15000,iot,interview
+S11,BTP Construction PM,3,10,6,Construction firms,Chantier mgmt,5000-50000,mobile,interview
+S12,BI & Analytics,4,12,5,All ecosystem clients,Cross-module analytics,3000-25000,data,interview

@@ -1,0 +1,18 @@
+{
+  "Index": {
+    "title": "Facturation",
+    "description": "Tableau de bord",
+    "create_invoice": "Créer une Facture",
+    "total_ht": "Total HT",
+    "tva": "TVA",
+    "total_ttc": "Total TTC",
+    "status_draft": "Brouillon",
+    "status_issued": "Émise"
+  },
+  "Navigation": {
+    "dashboard": "Tableau de bord",
+    "invoices": "Factures",
+    "clients": "Clients",
+    "settings": "Paramètres"
+  }
+}

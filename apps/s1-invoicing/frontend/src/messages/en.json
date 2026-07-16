@@ -1,0 +1,18 @@
+{
+  "Index": {
+    "title": "Invoicing",
+    "description": "Dashboard",
+    "create_invoice": "Create Invoice",
+    "total_ht": "Total HT",
+    "tva": "TVA",
+    "total_ttc": "Total TTC",
+    "status_draft": "Draft",
+    "status_issued": "Issued"
+  },
+  "Navigation": {
+    "dashboard": "Dashboard",
+    "invoices": "Invoices",
+    "clients": "Clients",
+    "settings": "Settings"
+  }
+}
